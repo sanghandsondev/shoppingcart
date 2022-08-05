@@ -124,7 +124,7 @@ app.use('/users', users)
 app.use('/', pages)
 
 //start the server
-var port = 8000;
+var port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log('Server running on port localhost:' + port)
 })
