@@ -6,9 +6,12 @@ var session = require('express-session')
 var expressValidator = require('express-validator')
 var fileUpload = require('express-fileupload')
 var passport = require('passport')
+const dotenv = require('dotenv')
+
+dotenv.config()
 
 //Connect to DB
-mongoose.connect('mongodb://localhost:27017/shopping_cart')
+mongoose.connect(process.env.DATABASE)
 var db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error'))
 db.once('open', () => {

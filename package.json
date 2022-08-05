@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "dotenv": "^16.0.1",
     "ejs": "^2.5.7",
     "express": "^4.15.3",
     "express-messages": "^1.0.1",
