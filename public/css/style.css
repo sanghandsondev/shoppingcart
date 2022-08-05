@@ -1,0 +1,25 @@
+.product-title {
+    cursor: default;
+    color: #000;
+}
+
+.product-price {
+    cursor: default;
+    color: #000;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+img.spi {
+    width: 100%;
+}
+
+p.desc-product {
+    word-break: break-word;
+}
+
+li.list-group-item a {
+    color: #333;
+}

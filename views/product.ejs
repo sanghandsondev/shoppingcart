@@ -1,0 +1,31 @@
+<% include _layouts/header %>
+
+
+    <div class="row">
+        <h2 class=".col-md-12">
+            <%= p.title %>
+        </h2>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <img class='spi' src="/images/product_images/<%= p.image %> " alt="">
+            <br>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <p class="col-md-12 desc-product">
+                    <%= p.desc %>
+                </p>
+
+                <div class="col-md-12">
+                    <h5>
+                        $<%= parseFloat(p.price).toFixed(2) %>
+                    </h5>
+                    <a href="/cart/add/<%= p.slug %>"><button class="btn btn-primary">Add to cart</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% include _layouts/footer %>
